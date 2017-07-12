@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<methodResponse>
+	<params>
+	 	<param>
+	  		<value>
+	   			<string>user eduardo created with success</string>
+	  		</value>
+	 	</param>
+	</params>
+</methodResponse>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<methodCall>
+	<methodName>createUser</methodName>
+	<params>
+		<param>
+		  	<value>
+		   		<string>eduardo</string>
+		  	</value>
+		</param>
+		<param>
+		  	<value>
+		   		<string>eduardo@teste.com.br</string>
+		  	</value>
+		</param>
+	</params>
+</methodCall>

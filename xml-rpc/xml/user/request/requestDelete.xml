@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<methodCall>
+	<methodName>deleteUser</methodName>
+	<params>
+		<param>
+		  	<value>
+		   		<int>1</int>
+		  	</value>
+	 	</param>
+	</params>
+</methodCall>

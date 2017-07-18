@@ -1,5 +1,10 @@
 <?php
 
+function get(string $method_name) : array
+{
+	return ['eduardo', 'paula', 'pedro'];
+}
+
 function create(string $method_name, array $args) : string
 {
 	return 'user '.$args[0].' created with success';
@@ -18,6 +23,8 @@ function delete(string $method_name, array $args) : string
 $request = file_get_contents("php://input");
 
 $server = xmlrpc_server_create();
+
+xmlrpc_server_register_method($server, "getUser", "get");
 
 xmlrpc_server_register_method($server, "createUser", "create");
 

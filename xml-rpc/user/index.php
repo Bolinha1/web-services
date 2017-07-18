@@ -1,8 +1,10 @@
 <?php
 
-$request = xmlrpc_encode_request("createUser", ['eduardo', 'eduardo@teste.com.br']);
+$request = xmlrpc_encode_request("getUser", []);
 
-//$request = xmlrpc_encode_request("updateUser", [1, 'eduardo', 'eduardo@teste.com.br']);
+//$request = xmlrpc_encode_request("createUser", ['eduardo']);
+
+//$request = xmlrpc_encode_request("updateUser", [1, 'eduardo']);
 
 //$request = xmlrpc_encode_request("deleteUser", [1]);
 
@@ -20,4 +22,4 @@ $file = file_get_contents($server, false, $context);
 
 $response = xmlrpc_decode($file);
 
-echo $response;
+var_dump($response);

@@ -1,6 +1,10 @@
 <?php
-class User
+class UserService
 {
+    public function get() : array
+    {
+        return ['eduardo', 'paula', 'pedro'];
+    }
     public function create(string $nome, string $email) : string
     {
     	return 'user '.$nome.' created with success';
@@ -19,6 +23,6 @@ class User
 
 $server = new SoapServer(null, ['uri' => 'http://localhost/web-services/soap/mode-non-wsdl/user']);
 
-$server->setClass('User');
+$server->setClass('UserService');
 
 $server->handle();

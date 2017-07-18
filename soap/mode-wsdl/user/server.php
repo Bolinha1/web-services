@@ -15,12 +15,12 @@ class UserService
         return $this->users;
     }
 
-    public function create(string $nome) : string
+    public function create(string $name) : string
     {
-        return "user ".$nome." created with success  \n";
+        return "user ".$name." created with success  \n";
     }
 
-    public function update(int $id, string $nome) : string
+    public function update(int $id, string $name) : string
     {
         return "user updated with success \n";
     }

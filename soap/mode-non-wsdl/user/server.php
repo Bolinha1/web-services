@@ -5,12 +5,12 @@ class UserService
     {
         return ['eduardo', 'paula', 'pedro'];
     }
-    public function create(string $nome, string $email) : string
+    public function create(string $name) : string
     {
-    	return 'user '.$nome.' created with success';
+    	return 'user '.$name.' created with success';
     }
 
-    public function update(int $id, string $nome, string $email) : string
+    public function update(int $id, string $name) : string
     {
         return 'user '.$id.' updated with success';
     }

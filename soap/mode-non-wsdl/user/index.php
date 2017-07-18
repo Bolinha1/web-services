@@ -6,7 +6,7 @@
 
 	$users = $api->get();
 
-	foreach($user as $user)
+	foreach($users as $user)
 		echo $user. "<br />";
 
 	echo "Request for method create user.: " .$api->create('eduardo'). "<br />";
